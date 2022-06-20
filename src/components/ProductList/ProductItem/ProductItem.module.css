@@ -3,7 +3,7 @@
   object-fit: cover;
   object-position: center;
 
-  border-radius: 2rem;
+  border-radius: 0rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
   z-index: 2;
 }
@@ -20,7 +20,7 @@
   right: 1.5rem;
   z-index: 1;
   
-  background-color: rgb(58, 56, 55);
+  background-color: rgb(43, 39, 38);
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
