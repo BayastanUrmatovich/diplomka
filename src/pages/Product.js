@@ -6,9 +6,11 @@ import { getProduct } from "../data/products";
 function Product() {
   const params = useParams();
   const product = getProduct(params.productId);
+
   if (!product) {
     return null;
   }
+
   return (
     <>
       <Header
@@ -16,8 +18,9 @@ function Product() {
         image={product.image}>
         {product.description}
       </Header>
-      <CartButton productId={product.id} />
+      <CartButton productId={params.productId} />
     </>
   );
 }
+
 export default Product;
