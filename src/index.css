@@ -5,6 +5,7 @@ body {
   font-family: 'Joan', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(rgb(175, 221, 88), rgb(40, 158, 236), rgb(235, 89, 32));
 }
 
 code {
@@ -12,7 +13,7 @@ code {
 }
 
 .container {
-  max-width: 987px;
+  max-width: 990px;
   margin: 0 auto;
   padding: 0 1rem;
 }
