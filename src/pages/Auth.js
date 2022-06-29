@@ -1,8 +1,12 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { start } from "../redux/authSlice";
+import "../components/css/Auth.module.css"
 
 export default function Auth() {
   const dispatch = useDispatch();
+  const { error, localId } = useSelector(store => store.auth);
+  const navigate = useNavigate();
 
   function onAuthStart(event) {
     event.preventDefault();
@@ -11,23 +15,33 @@ export default function Auth() {
     dispatch(start({
       email: formData.get('email'),
       password: formData.get('password'),
-      method: 'signup'
+      method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin',
     }));
+  }
+
+  if (localId !== null) {
+    navigate('/');
+  }
+
+  let errorOutput = null;
+  if (error) {
+    errorOutput = <strong style={{ color: "red" }}>{error}</strong>
   }
 
   return (
     <form onSubmit={onAuthStart}>
+      {errorOutput}
       <label>
         Email:
-        <input type="email" name="email" />
+        <input className="email" type="email" name="email" />
       </label>
       <label>
         Password:
-        <input type="password" name="password" />
+        <input className="email-2" type="password" name="password" />
       </label>
 
-      <button>Sign in</button>
-      <button>Sign up</button>
+      <button className="button">Sign in</button>
+      <button className="button-1">Sign up</button>
     </form>
   );
 }
