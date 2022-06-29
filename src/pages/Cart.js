@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import image from "../assets/contacts.jpeg";
+import image from "../assets/home.jpeg";
 import CartDisplay from "../components/СartDisplay/CartDisplay";
 import { Link } from "react-router-dom";
 
