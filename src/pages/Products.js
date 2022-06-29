@@ -6,16 +6,20 @@ import { getProducts } from "../data/products";
 function Products() {
   return (
     <>
-      <Header
-        title="Choose a product from your favorite anime!"
-        image={headerImage}>
-        Our products from:Death Note,Naruto,One Piece
+<Header
+title="Choose a product from your favorite anime!"
+image={headerImage}>
+Our products from:Death Note,Naruto,One Piece
 , Doctor stone, Attack on Titan, Dragon Ball Z, One-Punch Man, Demon Slayer.
-      </Header>
+</Header>
 
-      <ProductList products={getProducts()} />
+<ProductList products={getProducts()} />
     </>
   );
 }
 
 export default Products;
+
+
+
+
