@@ -1,6 +1,6 @@
 .Toolbar {
-  background-color: rgb(63, 29, 5);
-  color: white;
+  background-color: white;
+  color: rgb(29, 26, 26);
   box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 .Toolbar .container {
@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 @media (max-width: 620px) {
   .Toolbar ul {
     display: none;
