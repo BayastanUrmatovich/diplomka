@@ -7,5 +7,4 @@ function NavToggle({ callback }) {
     </button>
   );
 }
-
 export default NavToggle;
