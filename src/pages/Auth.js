@@ -29,7 +29,7 @@ export default function Auth() {
   }
 
   return (
-    <form onSubmit={onAuthStart}>
+    <form className="form" onSubmit={onAuthStart}>
       {errorOutput}
       <label>
         Email:
