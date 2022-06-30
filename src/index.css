@@ -5,7 +5,7 @@ body {
   font-family: 'Joan', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(rgb(175, 221, 88), rgb(40, 158, 236), rgb(235, 89, 32));
+  background-color: (201, 238, 68);
 }
 
 code {
